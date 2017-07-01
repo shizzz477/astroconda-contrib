@@ -1,6 +1,6 @@
 {% set name = 'selenium' %}
-{% set version = '2.49.2' %}
-{% set number = '0' %}
+{% set version = '3.4.0' %}
+{% set number = '2' %}
 
 about:
     home: https://pypi.python.org/packages/source/s/{{ name }}
@@ -17,14 +17,15 @@ package:
 requirements:
     build:
     - setuptools
-    - python x.x
+    - python
     run:
-    - python x.x
+    - python
 
 source:
-    fn: {{ name }}-{{ version }}.tar.gz
-    md5: 17cfe7c6adb2cad1f64a61cf753f0738
-    url: https://pypi.python.org/packages/source/s/{{ name }}/{{ name }}-{{ version }}.tar.gz
+    fn: selenium-3.4.0.tar.gz 
+    md5: 3f869785a289bd42df1c4d1f65f88df8
+    url: https://pypi.python.org/packages/e8/42/3cbe4cbde83a0bf6470c456301f2140d0b315e720660564919766e778e58/selenium-3.4.0.tar.gz
+    
 test:
     imports:
     - selenium
